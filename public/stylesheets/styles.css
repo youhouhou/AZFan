@@ -1,0 +1,20 @@
+.header{
+font-family: Impact, Charcoal, sans-serif;
+font-size: 50px;
+font-style: oblique;
+}
+blockquote{
+
+	padding-bottom: 30px;
+}
+
+.newArticleImg{
+	clear: left; 
+	float: left;
+	width: 110px;
+	height: 73px;
+}
+.newArticleText{
+	display: inline-block;
+	margin-left: 120;
+}
