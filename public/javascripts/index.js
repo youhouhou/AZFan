@@ -25,5 +25,25 @@ angular.module('ui.bootstrap.demo').controller('CarouselCtrl', function ($scope)
 });
 
 angular.module('ui.bootstrap.demo').controller('TabsCtrl', function ($scope, $window){
+  $scope.rate = 7;
+  $scope.max = 10;
+  $scope.isReadonly = false;
+  
+  $scope.hoveringOver = function(value) {    
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+  };
+  
+    $scope.foods = [
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+    {imageLink:"images/restaurant1.jpg",name:"1",address:"1"}
+  ]
 
+ 
 });
