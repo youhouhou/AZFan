@@ -40,10 +40,20 @@ blockquote{
 }
 
 .pic-and-description{
-
 	width: 200px;
 	height: 200px;
 	margin:0 auto 30px; 
+}
+
+#map{
+	width: 600px;
+	height: 400px;
+	margin:0 auto 30px; 
+}
+
+#maincontent .link{
+	margin:0 auto 30px;
+	text-align: center;
 }
 
 

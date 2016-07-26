@@ -45,5 +45,9 @@ angular.module('ui.bootstrap.demo').controller('TabsCtrl', function ($scope, $wi
     {imageLink:"images/restaurant1.jpg",name:"1",address:"1"}
   ]
 
+  $scope.myVar = true;
+  $scope.myVarFunc = function(){
+	  $scope.myVar = !$scope.myVar;
+  }
  
 });
