@@ -1,8 +1,15 @@
+/* general set up  */
+body{
+	font-size:16px;
+	font-family: 'Oxygen', sans-serif;
+}
+
 .header{
 font-family: Impact, Charcoal, sans-serif;
 font-size: 50px;
 font-style: oblique;
 }
+
 blockquote{
 
 	padding-bottom: 30px;
@@ -17,4 +24,48 @@ blockquote{
 .newArticleText{
 	display: inline-block;
 	margin-left: 120;
+}
+
+#maincontent{
+	margin-top: 10px;
+}
+
+.category-tile{
+	position:relative;
+	border: 2px solid #3F0c1F;
+	overflow:hidden;
+	width: 200px;
+	height: 200px;
+	margin:0 auto 15px;  /* how to center a thing */
+}
+
+.pic-and-description{
+	width: 200px;
+	height: 200px;
+	margin:0 auto 30px; 
+}
+
+#map{
+	width: 600px;
+	height: 400px;
+	margin:0 auto 30px; 
+}
+
+#maincontent .link{
+	margin:0 auto 30px;
+	text-align: center;
+}
+
+
+
+/* xxs device display */
+@media (max-width: 479px) {
+	.col-xxs-12{
+		position:relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
 }
