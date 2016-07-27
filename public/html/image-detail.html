@@ -10,10 +10,19 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-8" >
-        <div id="map">
-          <img width="600" height="400" src="images/restaurant1.jpg" alt="Lunch">
-          </div>
+      <div  class="col-sm-8">
+      
+         <ng-map id="map1" center="{{address}}" zoom="12">
+                <marker id="marker1" position="{{address}}" on-click="map.showInfoWindow('bar1')">
+                </marker>
+                 <info-window id="bar1">
+                    <div ng-non-bindable>
+                        <tag>{{restaurantName}}</tag><br>
+                        <tag>{{address}}</tag>
+                    </div>
+                </info-window>
+            </ng-map>
+       
         <div class="link">
           <a href="" ng-click="myVarFunc()">Back</a>
         </div>
