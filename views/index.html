@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html ng-app="ui.bootstrap.demo">
 <head>
@@ -51,7 +52,155 @@
         </uib-tab>
 
         <uib-tab index="1" heading="Recomended">
+||||||| merged common ancestors
+<!doctype html>
+<html ng-app="ui.bootstrap.demo">
+  <head>
+    <script src="javascripts/angular.js"></script>
+    <script src="javascripts/angular-animate.js"></script>
+    <script src="javascripts/ui-bootstrap-tpls-1.3.3.js"></script>
+    <script src="javascripts/index.js"></script>
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+ <h1 class="header">AZ Fan</h1>
 
+<div ng-controller="CarouselCtrl">
+  <div style="height: 305px">
+    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>       
+        </div>
+      </uib-slide>
+    </uib-carousel>
+  </div>  
+</div>
+<br />
+<br />
+
+<div ng-controller="TabsCtrl">
+  <uib-tabset active="active" justified=true>
+    <uib-tab index="0" heading="New Articles">
+    <p>New Article Content</p>
+    <blockquote>
+    <img src="images/restaurant1.jpg" alt="restaurant1" class="newArticleImg">
+    <p class="newArticleText">some images and text</p>
+    </blockquote>
+    <blockquote>
+    <img src="images/restaurant2.jpg" alt="restaurant2" class="newArticleImg">
+    <p  class="newArticleText">some images and text<p>
+    </blockquote>
+    </uib-tab>
+
+    <uib-tab index="1" heading="Recomended">Recomended Content</uib-tab>
+    <uib-tab index="2" heading="Find you favorite">Find you favorite Content</uib-tab>
+  </uib-tabset>
+</div>
+=======
+<!DOCTYPE html>
+<html ng-app="ngApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>
+  <script src="javascripts/angular.js"></script>
+  <script src="javascripts/angular-animate.js"></script>
+  <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script> 
+  <script src="javascripts/index.js"></script>
+  <script src="javascripts/ui-bootstrap-tpls-1.3.3.js"></script>  
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="stylesheets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<h1 class="header">AZ Fan</h1>
+
+
+
+  <div ng-controller="CarouselCtrl">
+    <div style="height: 305px">
+      <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+          <img ng-src="{{slide.image}}" style="margin:auto;">
+          <div class="carousel-caption">
+            <h4>Slide {{slide.id}}</h4>
+          </div>
+        </uib-slide>
+      </uib-carousel>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div ng-controller="TabsCtrl">
+    <uib-tabset active="active" justified=true>
+      <uib-tab index="0" heading="New Articles">
+        <p>New Article Content</p>
+        <blockquote>
+          <img src="images/restaurant1.jpg" alt="restaurant1" class="newArticleImg">
+          <div class="newArticleText">
+            <p>some images and text</p>
+            <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['1','2','3']" aria-labelledby="default-rating"></span>
+            <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>
+              =30 && percent
+              <70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{overStar}}</span>
+            </div>
+          </blockquote>
+          <blockquote>
+            <img src="images/restaurant2.jpg" alt="restaurant2" class="newArticleImg">
+            <div class="newArticleText">
+              <p>some images and text</p>
+            </div>
+          </blockquote>
+        </uib-tab>
+
+        <uib-tab index="1" heading="Recomended" select="resizeMap()">
+          <div id="maincontent" class="container" ng-show="myVar">
+            <section class="row">
+              <div ng-repeat="f in food" class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+                <div class="category-tile">
+                  <a href="" ng-click="myVarFunc(f)">
+                    <img width="200" height="200" ng-src="{{f.imageLink}}"></a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div ng-show="!myVar" ng-include="'html/image-detail.html'"></div>
+        </uib-tab>
+
+      <uib-tab index="2" heading="Find you favorite">
+        <div class="col-md-6 show-grid">
+          <uib-accordion close-others="oneAtTime">
+          <div uib-accordion-group class="panel-default" heading="Chinese Szechwan style">
+            <a href="#" ng-click="restaurantInfo('SzechwanPalace')">Szechwan Palace</a>
+          
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Mexican food">
+            <p>Mexican Food</p>
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Cafeteria">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Sea food">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Chinese HongKong style">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Taiwan style">
+          </div>
+        </uib-accordion>
+        </div>
+        <div class="col-md-6 show-grid">
+          <ng-include src="showRestaurantPage()"></ng-include>
+        </div>
+>>>>>>> upstream/master
+
+<<<<<<< HEAD
           <div id="maincontent" class="container" ng-show="myVar">
             <section class="row">
               <div ng-repeat="food in foods" class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
@@ -71,5 +220,18 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../public/javascripts/bootstrap.min.js"></script>
+||||||| merged common ancestors
+=======
+      </uib-tab>      
+      </uib-tabset>
+    </div>
+   
+>>>>>>> upstream/master
 </body>
+<<<<<<< HEAD
   </html>
+||||||| merged common ancestors
+</html>
+=======
+</html>
+>>>>>>> upstream/master

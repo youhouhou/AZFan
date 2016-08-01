@@ -1,0 +1,32 @@
+
+  <div id="maincontent" clas="container">
+    <section class="row">
+      <div class="col-sm-4" >
+        <div class="pic-and-description">
+          <img width="200" height="200" src="images/restaurant1.jpg" alt="Lunch"></div>
+        <div class="pic-and-description">
+          <p>
+            超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃超级好吃
+          </p>
+        </div>
+      </div>
+      <div  class="col-sm-8">
+      
+         <ng-map id="map1" center="{{address}}" zoom="12">
+                <marker id="marker1" position="{{address}}" on-click="map.showInfoWindow('bar1')">
+                </marker>
+                 <info-window id="bar1">
+                    <div ng-non-bindable>
+                        <label>{{restaurantName}}</label>                       
+                    </div>
+                </info-window>
+            </ng-map>
+       
+        <div class="link">
+          <a href="" ng-click="myVarFunc()">Back</a>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
