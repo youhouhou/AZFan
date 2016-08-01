@@ -21,6 +21,7 @@
 <h1 class="header">AZ Fan</h1>
 
 
+
   <div ng-controller="CarouselCtrl">
     <div style="height: 305px">
       <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
@@ -72,9 +73,31 @@
           <div ng-show="!myVar" ng-include="'html/image-detail.html'"></div>
         </uib-tab>
 
+      <uib-tab index="2" heading="Find you favorite">
+        <div class="col-md-6 show-grid">
+          <uib-accordion close-others="oneAtTime">
+          <div uib-accordion-group class="panel-default" heading="Chinese Szechwan style">
+            <a href="#" ng-click="restaurantInfo('SzechwanPalace')">Szechwan Palace</a>
+          
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Mexican food">
+            <p>Mexican Food</p>
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Cafeteria">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Sea food">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Chinese HongKong style">
+          </div>
+          <div uib-accordion-group class="panel-default" heading="Taiwan style">
+          </div>
+        </uib-accordion>
+        </div>
+        <div class="col-md-6 show-grid">
+          <ng-include src="showRestaurantPage()"></ng-include>
+        </div>
 
-
-      <uib-tab index="2" heading="Find you favorite">Find you favorite Content</uib-tab>
+      </uib-tab>      
       </uib-tabset>
     </div>
    
