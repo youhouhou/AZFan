@@ -8,6 +8,9 @@ mainApp.factory('FoodService', function(){
       {id:"2", imageLink:"images/ThaiBasil.jpg",name:"Thai Basil",address:"1111 S Rural Rd, Tempe, AZ 85281", phone:"(480)557-0101", website:"http://www.thaibasilasu.com/", style:"Thai food" },
       {id:"3", imageLink:"images/PhoenixPalace.jpg",name:"Phoenix Palace",address:"Dobson Park Plaza, 2075 N Dobson Rd, Chandler, AZ 85224", phone:"(480)855-4047", website:"http://www.phoenixpalacechandleraz.com/", style:"Cantonese style"},
       {id:"4", imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
+      {id:"5", imageLink:"images/KingWong.jpg", name:"King Wong", cname:"广州黄",address:"2545 N 32nd St Phoenix, AZ 85008", phone:"(602) 954-8088",website:"http://kingwongchinesephoenix.com/",style:"Cantonese style"},
+      {id:"6",imageLink:"George and Son Asian Cuisine.jpg", name:"George and Son Asian Cuisine", address:"3049 W Agua Fria Fwy Phoenix, AZ 85027",phone:"(623) 434-1888",website:"http://georgeandsonsasiancuisine.com/"style:"Thai"},
+      {id:"7",imageLink:"Wong's Chinese Dining.jpg",name:"Wong's Chinese Dining",address:"Edit1137 E Buckeye Rd Phoenix, AZ 85034",phone:"(602) 252-2791"},
       {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
       {imageLink:"images/restaurant1.jpg",name:"1",address:"1"},
       {imageLink:"images/restaurant1.jpg",name:"1",address:"1"}
@@ -20,8 +23,17 @@ mainApp.factory('FoodService', function(){
       {imageLink:"images/PacificSeaFoodBuffetFood1.jpg", restaurantId:"1"},
       {imageLink:"images/PacificSeaFoodBuffetFood2.jpg", restaurantId:"1"},
       {imageLink:"images/PacificSeaFoodBuffetFood3.jpg", restaurantId:"1"},
-      {imageLink:"images/PacificSeaFoodBuffetFood4.jpg", restaurantId:"1"}
-      
+      {imageLink:"images/PacificSeaFoodBuffetFood4.jpg", restaurantId:"1"},
+      {imageLink:"images/KingWongFood1.jpg",restaurantId:"5"},
+      {imageLink:"images/KingWongFood2.jpg",restaurantId:"5"},
+      {imageLink:"images/George and Son Asian Cuisine Food1.jpg",restaurantId:"6"},
+      {imageLink:"images/George and Son Asian Cuisine Food2.jpg",restaurantId:"6"},
+      {imageLink:"images/George and Son Asian Cuisine Food3.jpg",restaurantId:"6"},
+      {imageLink:"images/George and Son Asian Cuisine Food4.jpg",restaurantId:"6"},
+      {imageLink:"images/Wong's Chinese Dining Food1.jpg",restaurantId:"7"},
+      {imageLink:"images/Wong's Chinese Dining Food2.jpg",restaurantId:"7"},
+      {imageLink:"images/Wong's Chinese Dining Food3.jpg",restaurantId:"7"},
+      {imageLink:"images/Wong's Chinese Dining Food4.jpg",restaurantId:"7"}
     ]
   };
   return foodService;
